@@ -1,76 +1,108 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Writings – secondorder.xyz</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <style>
-    body {
-        background: #ffffff;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        color: #333;
-        max-width: 650px;
-        margin: 4rem auto;
-        padding: 0 1rem;
-        line-height: 1.7;
-    }
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-    ul {
-        list-style-type: none;
-        padding-left: 0;
-    }
-    li {
-        margin-bottom: 2rem;
-    }
-    a {
-        font-size: 1.2rem;
-        color: #333;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    a:hover {
-        color: #000;
-    }
-    .desc {
-        font-size: 1rem;
-        color: #777;
-        margin-top: 0.5rem;
-        line-height: 1.6;
-    }
-  </style>
-</head>
-<body>
-  <h1>Collected Writings</h1>
-  <ul>
-    <li>
-      <a href="on-katana.html">On The Katana</a>
-      <div class="desc">On discipline, ritual, and the quiet power of restraint.</div>
-    </li>
-    <li>
-      <a href="on-profundity.html">On Profundity</a>
-      <div class="desc">Why time, sacrifice, and depth still matter.</div>
-    </li>
-    <li>
-      <a href="on-bitcoin.html">On Bitcoin</a>
-      <div class="desc">Anchoring in a world flooded by noise.</div>
-    </li>
-    <li>
-      <a href="the-machine.html">The Machine Behind the Glass</a>
-      <div class="desc">The browser stopped being a reader.</div>
-    </li>
-    <li>
-      <a href="on-sovereignty.html">On Sovereignty</a>
-      <div class="desc">Permissionless capital. Borderless intelligence.</div>
-    </li>
-    <li>
-      <a href="thinking-machines.html">Thinking Machines</a>
-      <div class="desc">What Ada Lovelace saw — not a calculator, but a loom for logic.</div>
-    </li>
-  </ul>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Writings – secondorder.xyz</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+      body {
+          background: #ffffff;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          color: #333;
+          max-width: 650px;
+          margin: 4rem auto;
+          padding: 0 1rem;
+          line-height: 1.7;
+      }
+      h1 {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          text-align: center;
+      }
+      ul {
+          list-style-type: none;
+          padding-left: 0;
+      }
+      li {
+          margin-bottom: 2rem;
+      }
+      a {
+          font-size: 1.2rem;
+          color: #333;
+          text-decoration: none;
+          font-weight: bold;
+      }
+      a:hover {
+          color: #000;
+      }
+      .desc {
+          font-size: 1rem;
+          color: #777;
+          margin-top: 0.5rem;
+          line-height: 1.6;
+      }
+
+      /* subtle, archival “proof” link inside description */
+      .prooflink{
+          font-weight:600; font-size:.9rem; margin-left:.4rem;
+          color:#888; text-decoration:underline dotted;
+          text-underline-offset:2px;
+          white-space:nowrap;
+      }
+      .prooflink:hover{color:var(--ink)}
+      .prooflink:focus-visible{
+          outline:2px solid #ddd; outline-offset:2px; border-radius:4px;
+      }
+
+      /* Dark mode, for taste */
+      @media (prefers-color-scheme: dark){
+          :root{--ink:#ddd; --ink-strong:#fff; --muted:#a8a8a8; --fine:#8a8a8a}
+          body{background:#0f0f10}
+          li{border-bottom:1px solid #1e1e20}
+          .prooflink{color:#9aa0a6}
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Collected Writings</h1>
+    <ul>
+      <li>
+        <a href="on-katana.html">On The Katana</a>
+        <div class="desc">On discipline, ritual, and the quiet power of restraint.
+          <a href="proofs/on-katana.html" class="prooflink">proof ↗</a>
+        </div>
+      </li>
+      <li>
+        <a href="on-profundity.html">On Profundity</a>
+        <div class="desc">Why time, sacrifice, and depth still matter.
+          <a href="proofs/on-katana.html" class="prooflink">proof ↗</a>
+        </div>
+      </li>
+      <li>
+        <a href="on-bitcoin.html">On Bitcoin</a>
+        <div class="desc">Anchoring in a world flooded by noise.
+          <a href="proofs/on-katana.html" class="prooflink">proof ↗</a>
+        </div>
+      </li>
+      <li>
+        <a href="the-machine.html">The Machine Behind the Glass</a>
+        <div class="desc">The browser stopped being a reader.
+          <a href="proofs/on-katana.html" class="prooflink">proof ↗</a>
+        </div>
+      </li>
+      <li>
+        <a href="on-sovereignty.html">On Sovereignty</a>
+        <div class="desc">Permissionless capital. Borderless intelligence.
+          <a href="proofs/on-katana.html" class="prooflink">proof ↗</a>
+        </div>
+      </li>
+      <li>
+        <a href="thinking-machines.html">Thinking Machines</a>
+        <div class="desc">What Ada Lovelace saw — not a calculator, but a loom for logic.
+          <a href="proofs/on-katana.html" class="prooflink">proof ↗</a>
+        </div>
+      </li>
+    </ul>
+  </body>
 </html>
